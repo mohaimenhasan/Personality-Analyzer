@@ -48,7 +48,6 @@ for x in range(0, 16):  # Pulls max number of tweets from an account
         statuses.append(status)
 
 pi_content_items_array = list(map(convert_status_to_pi_content_item, statuses))
-print(pi_content_items_array)
 pi_content_items = {'contentItems': pi_content_items_array}
 
 
@@ -60,6 +59,6 @@ r = requests.post(config.pi_url + '/v2/profile',
                   },
                   data=json.dumps(pi_content_items)
                   )
-print(pi_content_items)
+
 print("Profile Request sent. Status code: %d, content-type: %s" % (r.status_code, r.headers['content-type']))
 print (json.loads(r.text))

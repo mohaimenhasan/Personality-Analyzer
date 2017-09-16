@@ -1,0 +1,27 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-size: 18px;
+}
+
+
+body {
+background: #E8CBC0;  
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+background: linear-gradient(to right, #636FA4, #E8CBC0);
+
+}
+
+
+
+input[type="text"]{
+	  text-align: center;
+	  border: solid white;
+	  width: 60%;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  line-height: 3;
+	  margin: 6em 6.5em 0em;
+	  font-size: 40px;
+	  color: white;
+	}
